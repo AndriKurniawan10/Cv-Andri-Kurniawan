@@ -1,1 +1,136 @@
+/* ========================================
+   STYLE.CSS - Styling Utama CV Andri
+   ======================================== */
 
+:root {
+  /* Color Variables */
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --accent-color: #e74c3c;
+  --text-color: #333;
+  --light-text: #666;
+  --bg-color: #f8f9fa;
+  --white: #ffffff;
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  
+  /* Font Variables */
+  --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-size-base: 16px;
+  --line-height: 1.6;
+}
+
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height);
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  border-bottom: 3px solid var(--secondary-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+
+p {
+  margin-bottom: 1rem;
+  color: var(--light-text);
+}
+
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--secondary-color);
+  color: var(--white);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.btn-secondary {
+  background-color: var(--accent-color);
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.35rem 0.65rem;
+  background-color: var(--secondary-color);
+  color: var(--white);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-muted {
+  color: var(--light-text);
+}
+
+.mt-1 { margin-top: 1rem; }
+.mt-2 { margin-top: 2rem; }
+.mb-1 { margin-bottom: 1rem; }
+.mb-2 { margin-bottom: 2rem; }
