@@ -1,244 +1,353 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Andri Kurniawan</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
-    <meta name="description" content="CV Andri Kurniawan - Web Developer & Mahasiswa Informatika Universitas Faletehan">
-    <link rel="icon" href="img/foto.jpg" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CV Profesional Andri Kurniawan - Cek pengalaman, keahlian, dan project saya">
+  <meta name="keywords" content="CV, Resume, Andri Kurniawan, Portfolio">
+  <meta name="author" content="Andri Kurniawan">
+  
+  <title>CV Andri Kurniawan - Portfolio Profesional</title>
+  
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
+<body>
+  <!-- Header / Introduction -->
+  <header>
+    <div class="container">
+      <h1>👋 Andri Kurniawan</h1>
+      <p class="subtitle">Web Developer | Problem Solver | Tech Enthusiast</p>
+      
+      <div class="contact-info">
+        <a href="mailto:andri@example.com">📧 Email</a>
+        <a href="https://linkedin.com/in/andrikurniawan" target="_blank">💼 LinkedIn</a>
+        <a href="https://github.com/AndriKurniawan10" target="_blank">🐙 GitHub</a>
+        <a href="tel:+6281234567890">📱 Phone</a>
+      </div>
+    </div>
+  </header>
 
-<body class="bg-gradient-to-br from-slate-100 to-white text-gray-800">
-
-    <!-- Header -->
-    <section class="w-full bg-white shadow-md py-10 px-4 md:px-10">
-        <div class="w-full flex flex-col md:flex-row items-center md:items-start md:space-x-10 max-w-5xl mx-auto">
-            <img src="img/foto.jpg" alt="Foto Andri"
-                class="w-32 h-32 rounded-full border-4 border-red-500 shadow-md object-cover mb-6 md:mb-0">
-
-            <div class="text-center md:text-left space-y-2">
-                <h1 class="text-2xl font-bold">Andri Kurniawan</h1>
-                <p class="text-gray-600">Web Developer & Informatics Student</p>
-                <ul class="text-sm text-gray-700 space-y-1">
-                    <li><strong>Email:</strong> andrikurrr10@email.com</li>
-                    <li><strong>Telepon:</strong> 0878-0108-7313</li>
-                    <li><strong>LinkedIn:</strong>
-                        <a href=""
-                            class="text-blue-600 hover:underline">linkedin.com/in/</a>
-                    </li>
-                    <li><strong>GitHub:</strong>
-                        <a href=""
-                            class="text-blue-600 hover:underline">github.com/</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+  <!-- Main Content -->
+  <main class="container">
+    
+    <!-- Tentang Saya Section -->
+    <section class="section">
+      <div class="section-header">
+        <h2>Tentang Saya</h2>
+      </div>
+      
+      <div class="card">
+        <p>
+          Saya adalah seorang Web Developer dengan passion dalam membangun aplikasi web yang responsif dan user-friendly. 
+          Dengan pengalaman [X tahun] di industri teknologi, saya fokus pada frontend development dan UX/UI design.
+        </p>
+        <p>
+          Saya percaya bahwa code yang baik adalah code yang mudah dipahami, maintainable, dan efficient. 
+          Selalu eager to learn dan stay updated dengan teknologi terbaru dalam web development.
+        </p>
+      </div>
     </section>
 
-    <!-- Tentang & Pendidikan -->
-    <section class="max-w-6xl mx-auto p-4 md:p-10">
-        <div class="mb-6">
-            <p class="text-base md:text-lg">Lulusan Baru (Fresh Graduate) S1 Universitas Faletehan yang memiliki minat dan keahlian dalam Desain UI/UX, Pengembangan Web, serta Multimedia. Memiliki pengalaman dalam pengelolaan administrasi dan mahir menggunakan Microsoft Excel untuk pencatatan data, pengolahan informasi, dan pelaporan secara efisien. Aktif dalam organisasi kampus yang membentuk kemampuan komunikasi, kepemimpinan, dan kerja tim. Terbiasa berkolaborasi dalam proyek teknologi dan memiliki semangat tinggi untuk terus belajar serta menciptakan solusi digital yang berdampak positif bagi masyarakat.</p>
+    <!-- Pengalaman Kerja Section -->
+    <section class="section">
+      <div class="section-header">
+        <h2>Pengalaman Kerja</h2>
+      </div>
+      
+      <div class="timeline">
+        <div class="timeline-item card">
+          <h3 class="card-title">Senior Web Developer</h3>
+          <p class="card-subtitle">PT. Tech Solutions Indonesia</p>
+          <p class="card-date">2023 - Present</p>
+          <p>
+            Memimpin tim frontend development dalam membuat aplikasi web skala enterprise. 
+            Mengoptimalkan performa aplikasi dan meningkatkan user experience.
+          </p>
+          <ul style="margin-left: 1.5rem;">
+            <li>Mengembangkan fitur-fitur kompleks menggunakan React & TypeScript</li>
+            <li>Melakukan code review dan mentoring tim junior developer</li>
+            <li>Meningkatkan performa aplikasi hingga 40%</li>
+          </ul>
         </div>
 
-        <div class="mb-6">
-            <h2 class="text-xl font-semibold mb-2">Pendidikan</h2>
-            <ul class="list-disc pl-5 space-y-1">
-                <li>Universitas Faletehan — S1 Informatika (2025)</li>
-                <li>SMA Negeri 3 Pandeglang — IPS (2017 – 2020)</li>
-            </ul>
+        <div class="timeline-item card">
+          <h3 class="card-title">Web Developer</h3>
+          <p class="card-subtitle">PT. Digital Innovation Studio</p>
+          <p class="card-date">2021 - 2023</p>
+          <p>
+            Mengembangkan website dan aplikasi web untuk berbagai klien startup dan enterprise.
+          </p>
+          <ul style="margin-left: 1.5rem;">
+            <li>Membuat responsive website dengan HTML, CSS, dan JavaScript</li>
+            <li>Integrasi dengan REST API dan database</li>
+            <li>Deployment dan maintenance aplikasi web</li>
+          </ul>
         </div>
 
-        <!-- Keahlian -->
-        <div class="mb-6">
-            <h2 class="text-xl font-semibold mb-2">Keahlian</h2>
-            <div class="flex flex-wrap gap-2">
-                <span class="bg-gray-200 rounded-full px-3 py-1 text-sm">Laravel</span>
-                <span class="bg-gray-200 rounded-full px-3 py-1 text-sm">PHP</span>
-                <span class="bg-gray-200 rounded-full px-3 py-1 text-sm">Tailwind CSS</span>
-                <span class="bg-gray-200 rounded-full px-3 py-1 text-sm">JavaScript</span>
-                <span class="bg-gray-200 rounded-full px-3 py-1 text-sm">MySQL</span>
-            </div>
+        <div class="timeline-item card">
+          <h3 class="card-title">Junior Web Developer</h3>
+          <p class="card-subtitle">PT. StartUp Muda Indonesia</p>
+          <p class="card-date">2020 - 2021</p>
+          <p>
+            Memulai karir sebagai junior developer dan belajar best practices dalam web development.
+          </p>
+          <ul style="margin-left: 1.5rem;">
+            <li>Mengembangkan front-end website dengan HTML, CSS, JavaScript</li>
+            <li>Collaborasi dengan tim design dan backend developer</li>
+            <li>Bug fixing dan maintenance aplikasi</li>
+          </ul>
         </div>
-
-        <!-- Proyek -->
-        <div class="mb-6">
-            <h2 class="text-xl font-semibold mb-2">Proyek</h2>
-            <ul class="list-disc pl-5 space-y-2">
-                <li><strong>Aplikasi Absensi Dosen:</strong> Web-based app untuk presensi dosen berbasis Laravel +
-                    FaceID.</li>
-                <li><strong>E-commerce "bussinesGirl":</strong> Toko online dengan fitur multi-user, dashboard admin,
-                    dan sistem keranjang.</li>
-            </ul>
-        </div>
-
-        <!-- Bagikan CV -->
-        <div class="mb-6">
-            <h2 class="text-xl font-semibold mb-2">Bagikan CV</h2>
-            <div class="flex gap-4">
-                <a href="https://wa.me/628878801087313?text=Hai!%20Cek%20CV%20saya%20di%20sini:%20https://andrikurniawan10.github.io/CvAndri/"
-                    target="_blank"
-                    class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded shadow">WhatsApp</a>
-                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://andrikurniawan10.github.io/CvAndri/" target="_blank"
-                    class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded shadow">LinkedIn</a>
-            </div>
-        </div>
-
-        <!-- Sertifikat  -->
-        <section class="py-10 px-4 md:px-10 bg-gray-50">
-            <h2 class="text-2xl font-bold text-center mb-6">Sertifikat</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                <img src="img/sertif1.jpg" alt="Sertifikat 1" class="rounded shadow-md">
-                <img src="img/sertif2.jpg" alt="Sertifikat 2" class="rounded shadow-md">
-            </div>
-            <div class="text-center">
-                <button onclick="document.getElementById('sertifikatModal').classList.remove('hidden')" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded shadow">
-                    Lihat Semua Sertifikat
-                </button>
-            </div>
-            <div id="sertifikatModal" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden z-50">
-                <div class="bg-white p-6 rounded-lg max-w-5xl w-full overflow-y-auto max-h-[85vh] relative">
-                    <button onclick="document.getElementById('sertifikatModal').classList.add('hidden')" class="absolute top-4 right-4 text-red-600 text-lg font-semibold">
-                        ✖
-                    </button>
-                    <h3 class="text-xl font-semibold mb-4 text-center">Semua Sertifikat</h3>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                        <img src="img/sertif1.jpg" alt="Sertifikat 1" class="rounded shadow-md">
-                        <img src="img/sertif3.jpg" alt="Sertifikat 3" class="rounded shadow-md">
-                        <img src="img/sertif2.jpg" alt="Sertifikat 2" class="rounded shadow-md">
-                        <img src="img/sertif4.jpg" alt="Sertifikat 4" class="rounded shadow-md">
-                        <img src="img/sertif7.jpg" alt="Sertifikat 7" class="rounded shadow-md">
-                        <img src="img/sertif6.jpg" alt="Sertifikat 6" class="rounded shadow-md">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Dokumentasi -->
-        <section class="py-10 px-4 md:px-10 bg-gray-50">
-            <h2 class="text-2xl font-bold text-center mb-6">Dokumentasi Project </h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                <img src="img/login.png" alt="Login" class="rounded shadow-md">
-                <img src="img/dash.png" alt="dashboard" class="rounded shadow-md">
-            </div>
-            <div class="text-center">
-                <button onclick="document.getElementById('dokumentasiModal').classList.remove('hidden')" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded shadow">
-                    Lihat Semua Dokumentasi
-                </button>
-            </div>
-            <div id="dokumentasiModal" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden z-50">
-                <div class="bg-white p-6 rounded-lg max-w-5xl w-full overflow-y-auto max-h-[85vh] relative">
-                    <button onclick="document.getElementById('dokumentasiModal').classList.add('hidden')" class="absolute top-4 right-4 text-red-600 text-lg font-semibold">
-                        ✖
-                    </button>
-                    <h3 class="text-xl font-semibold mb-4 text-center">Semua Dokumentasi Project</h3>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                        <img src="img/login.png" alt="login" class="rounded shadow-md">
-                        <img src="img/dash.png" alt="dashboard" class="rounded shadow-md">
-                        <img src="img/cety.jpg" alt="cetak" class="rounded shadow-md">
-                        <img src="img/hasilt.png" alt="hasil" class="rounded shadow-md">
-                        <img src="img/tamdat.png" alt="tambah data" class="rounded shadow-md">
-                        <img src="img/input.png" alt="input data" class="rounded shadow-md">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Pengalaman Organisasi -->
-        <section class="mt-12 px-4">
-            <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Pengalaman Organisasi</h2>
-            <div class="space-y-6">
-                <div class="bg-white shadow-md rounded-xl p-4 flex flex-col md:flex-row gap-4 items-center hover:shadow-lg transition">
-                    <img src="img/him.jpeg" alt="Dokumentasi HIMANDER" class="w-full md:w-48 rounded-xl object-cover">
-                    <div>
-                        <h3 class="text-lg font-semibold text-indigo-600">Ketua — HIMANDER</h3>
-                        <p class="text-sm text-gray-600">2022 - Sekarang</p>
-                        <p class="text-gray-700 mt-2">
-                            Memimpin organisasi HIMANDER, dan menyusun event tournament Esport.
-                        </p>
-                    </div>
-                </div>
-                <div class="bg-white shadow-md rounded-xl p-4 flex flex-col md:flex-row gap-4 items-center hover:shadow-lg transition">
-                    <img src="img/kai.PNG" alt="Dokumentasi HMPS" class="w-full md:w-48 rounded-xl object-cover">
-                    <div>
-                        <h3 class="text-lg font-semibold text-indigo-600">Kominfo  — Kajian Ilmiah</h3>
-                        <p class="text-sm text-gray-600">2023</p>
-                        <p class="text-gray-700 mt-2">
-                            Berperan dalam publikasi dan dokumentasi kegiatan diskusi ilmiah serta menyebarluaskan informasi melalui media sosial.
-                        </p>
-                    </div>
-                </div>
-                <div class="bg-white shadow-md rounded-xl p-4 flex flex-col md:flex-row gap-4 items-center hover:shadow-lg transition">
-                    <img src="img/himp.PNG" alt="Dokumentasi HMPS" class="w-full md:w-48 rounded-xl object-cover">
-                    <div>
-                        <h3 class="text-lg font-semibold text-indigo-600">Anggota PKM — HMPS</h3>
-                        <p class="text-sm text-gray-600">2023</p>
-                        <p class="text-gray-700 mt-2">
-                            Terlibat dalam pelaksanaan Program Kreativitas Mahasiswa (PKM), membantu tim dalam penyusunan proposal dan pelaporan kegiatan.
-                        </p>
-                    </div>
-                </div>
-                <div class="bg-white shadow-md rounded-xl p-4 flex flex-col md:flex-row gap-4 items-center hover:shadow-lg transition">
-                    <img src="img/Td.jpg" alt="Dokumentasi HMPS" class="w-full md:w-48 rounded-xl object-cover">
-                    <div>
-                        <h3 class="text-lg font-semibold text-indigo-600">Ketua — Tarung Derajat</h3>
-                        <p class="text-sm text-gray-600">2023</p>
-                        <p class="text-gray-700 mt-2">
-                            Terlibat dalam pelaksanaan latihan rutin, membantu rekan dengan mengembangkan organisasi serta kekompakan sesama atlet.
-                        </p>
-                    </div>
-                </div>
-                <div class="bg-white shadow-md rounded-xl p-4 flex flex-col md:flex-row gap-4 items-center hover:shadow-lg transition">
-                    <img src="img/seni.jpg" alt="Dokumentasi HMPS" class="w-full md:w-48 rounded-xl object-cover">
-                    <div>
-                        <h3 class="text-lg font-semibold text-indigo-600">Anggota  — Sanggar Seni</h3>
-                        <p class="text-sm text-gray-600">2023</p>
-                        <p class="text-gray-700 mt-2">
-                            Mengikuti kegiatan seni tari dan mengikuti berbagai event baik WO maupun lainnya.
-                        </p>
-                    </div>
-                </div>
-                <div class="bg-white shadow-md rounded-xl p-4 flex flex-col md:flex-row gap-4 items-center hover:shadow-lg transition">
-                    <img src="img/g.jpeg" alt="Dokumentasi HMPS" class="w-full md:w-48 rounded-xl object-cover">
-                    <div>
-                        <h3 class="text-lg font-semibold text-indigo-600">Kominfo  — Gemala</h3>
-                        <p class="text-sm text-gray-600">2023</p>
-                        <p class="text-gray-700 mt-2">
-                            Berperan dalam publikasi dan dokumentasi kegiatan diskusi ilmiah serta menyebarluaskan informasi melalui media sosial.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="text-center text-sm text-gray-500 py-6">
-            &copy; 2025 Andri Kurniawan. All rights reserved.
-        </footer>
+      </div>
     </section>
 
-    <!-- Modal Scripts -->
-    <script>
-        // Script untuk tutup modal di luar klik tombol (klik area hitam)
-        document.addEventListener('click', function (event) {
-            if (event.target.id === 'sertifikatModal') {
-                event.target.classList.add('hidden');
-            }
-            if (event.target.id === 'dokumentasiModal') {
-                event.target.classList.add('hidden');
-            }
-        });
-    </script>
+    <!-- Keahlian Section -->
+    <section class="section">
+      <div class="section-header">
+        <h2>Keahlian & Teknologi</h2>
+      </div>
+      
+      <div class="skills-container">
+        <!-- Frontend Skills -->
+        <div class="skill-group">
+          <h4>🎨 Frontend</h4>
+          
+          <div class="skill-bar">
+            <div class="skill-name">
+              <span>HTML5 & CSS3</span>
+              <span>95%</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-bar" style="width: 95%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="skill-name">
+              <span>JavaScript</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-bar" style="width: 90%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="skill-name">
+              <span>React & Vue.js</span>
+              <span>85%</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-bar" style="width: 85%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="skill-name">
+              <span>Responsive Design</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-bar" style="width: 90%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend Skills -->
+        <div class="skill-group">
+          <h4>⚙️ Backend</h4>
+          
+          <div class="skill-bar">
+            <div class="skill-name">
+              <span>Node.js & Express</span>
+              <span>80%</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-bar" style="width: 80%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="skill-name">
+              <span>REST API</span>
+              <span>85%</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-bar" style="width: 85%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="skill-name">
+              <span>Database (SQL & NoSQL)</span>
+              <span>80%</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-bar" style="width: 80%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="skill-name">
+              <span>Git & Version Control</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-bar" style="width: 90%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools & Others -->
+        <div class="skill-group">
+          <h4>🛠️ Tools & Other</h4>
+          
+          <div class="skill-bar">
+            <div class="skill-name">
+              <span>VS Code & DevTools</span>
+              <span>95%</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-bar" style="width: 95%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="skill-name">
+              <span>Figma & Design</span>
+              <span>75%</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-bar" style="width: 75%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="skill-name">
+              <span>Problem Solving</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-bar" style="width: 90%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="skill-name">
+              <span>Communication</span>
+              <span>85%</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-bar" style="width: 85%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pendidikan Section -->
+    <section class="section">
+      <div class="section-header">
+        <h2>Pendidikan</h2>
+      </div>
+      
+      <div class="card accent">
+        <h3 class="card-title">Sarjana Teknik Informatika</h3>
+        <p class="card-subtitle">Universitas [Nama Universitas]</p>
+        <p class="card-date">2016 - 2020</p>
+        <p>
+          Lulus dengan GPA 3.7/4.0. Fokus pada Web Development, Database, dan Software Engineering.
+        </p>
+        <p><strong>Prestasi:</strong> Dean's List, Best Project Award</p>
+      </div>
+    </section>
+
+    <!-- Project / Portfolio Section -->
+    <section class="section">
+      <div class="section-header">
+        <h2>Project Terbaru</h2>
+      </div>
+      
+      <div class="grid">
+        <div class="grid-item">
+          <h3>E-Commerce Platform</h3>
+          <p>Platform e-commerce modern dengan fitur lengkap seperti shopping cart, payment gateway, dan admin dashboard.</p>
+          <div style="margin-top: 1rem;">
+            <span class="badge">React</span>
+            <span class="badge">Node.js</span>
+            <span class="badge">MongoDB</span>
+            <span class="badge">Stripe</span>
+          </div>
+          <a href="#" class="btn mt-1">Lihat Project</a>
+        </div>
+
+        <div class="grid-item">
+          <h3>Task Management App</h3>
+          <p>Aplikasi manajemen tugas dengan fitur real-time collaboration, reminder, dan analytics.</p>
+          <div style="margin-top: 1rem;">
+            <span class="badge">Vue.js</span>
+            <span class="badge">Firebase</span>
+            <span class="badge">WebSocket</span>
+          </div>
+          <a href="#" class="btn mt-1">Lihat Project</a>
+        </div>
+
+        <div class="grid-item">
+          <h3>Portfolio Website</h3>
+          <p>Website portfolio responsif dengan design modern dan performa optimal.</p>
+          <div style="margin-top: 1rem;">
+            <span class="badge">HTML5</span>
+            <span class="badge">CSS3</span>
+            <span class="badge">JavaScript</span>
+          </div>
+          <a href="#" class="btn mt-1">Lihat Project</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sertifikasi Section (Optional) -->
+    <section class="section">
+      <div class="section-header">
+        <h2>Sertifikasi</h2>
+      </div>
+      
+      <div class="grid">
+        <div class="card">
+          <h3 class="card-title">🏆 Web Developer Certified</h3>
+          <p class="card-subtitle">freeCodeCamp</p>
+          <p class="card-date">2021</p>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">🏆 React Advanced Patterns</h3>
+          <p class="card-subtitle">Udemy</p>
+          <p class="card-date">2022</p>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">🏆 Google Cloud Associate</h3>
+          <p class="card-subtitle">Google Cloud</p>
+          <p class="card-date">2023</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Andri Kurniawan. All rights reserved.</p>
+      <p>Made with ❤️ using HTML & CSS | <a href="https://github.com/AndriKurniawan10/Cv-Andri-Kurniawan" target="_blank">GitHub</a></p>
+    </div>
+  </footer>
+
+  <!-- JavaScript (opsional) -->
+  <script src="js/script.js"></script>
 </body>
-
-
 </html>
-
-
