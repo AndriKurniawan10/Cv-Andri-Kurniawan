@@ -1,1 +1,272 @@
+/* ========================================
+   RESPONSIVE.CSS - Media Queries & Responsive Design
+   ======================================== */
 
+/* Tablet (768px and below) */
+@media screen and (max-width: 768px) {
+  :root {
+    --font-size-base: 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  /* Header responsive */
+  header {
+    padding: 2rem 0;
+  }
+
+  header .contact-info {
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  /* Grid responsive */
+  .grid,
+  .skills-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  /* Timeline responsive */
+  .timeline {
+    padding-left: 1.5rem;
+  }
+
+  .timeline-item::before {
+    left: -2.15rem;
+  }
+
+  .section {
+    margin-bottom: 2rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Mobile (480px and below) */
+@media screen and (max-width: 480px) {
+  :root {
+    --font-size-base: 14px;
+  }
+
+  body {
+    line-height: 1.5;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  /* Header responsive mobile */
+  header {
+    padding: 1.5rem 0;
+  }
+
+  header h1 {
+    margin-bottom: 0.25rem;
+  }
+
+  header .subtitle {
+    font-size: 1rem;
+  }
+
+  header .contact-info {
+    gap: 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  /* Container */
+  .container {
+    padding: 0 10px;
+  }
+
+  /* Grid responsive mobile */
+  .grid,
+  .grid-2,
+  .skills-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .grid-item {
+    padding: 1rem;
+  }
+
+  /* Card mobile */
+  .card {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 3px solid var(--secondary-color);
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  /* Timeline mobile */
+  .timeline {
+    padding-left: 1rem;
+  }
+
+  .timeline-item {
+    margin-bottom: 1.5rem;
+  }
+
+  .timeline-item::before {
+    left: -1.65rem;
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+
+  .timeline::before {
+    left: -0.1rem;
+    width: 1.5px;
+  }
+
+  /* Buttons mobile */
+  .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    width: 100%;
+  }
+
+  /* Badges mobile */
+  .badge {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.75rem;
+    margin-right: 0.3rem;
+  }
+
+  /* Section spacing */
+  .section {
+    margin-bottom: 1.5rem;
+  }
+
+  .section-header {
+    gap: 0.5rem;
+  }
+
+  .section-header::before {
+    width: 3px;
+    height: 25px;
+  }
+
+  /* Utility margins */
+  .mt-1 { margin-top: 0.75rem; }
+  .mt-2 { margin-top: 1rem; }
+  .mb-1 { margin-bottom: 0.75rem; }
+  .mb-2 { margin-bottom: 1rem; }
+}
+
+/* Very small devices (320px and below) */
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 0.9rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  header .contact-info {
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .container {
+    padding: 0 8px;
+  }
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background-color: var(--white);
+  }
+
+  header {
+    background: var(--primary-color);
+    color: var(--white);
+  }
+
+  .grid-item,
+  .card,
+  .skill-group {
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+
+  .btn,
+  .contact-info a {
+    display: none;
+  }
+
+  footer {
+    page-break-before: always;
+  }
+
+  a {
+    color: var(--primary-color);
+  }
+}
+
+/* Dark mode support (optional) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #e0e0e0;
+    --light-text: #999;
+    --bg-color: #1a1a1a;
+    --white: #2a2a2a;
+  }
+
+  body {
+    background-color: var(--bg-color);
+  }
+
+  .grid-item,
+  .card,
+  .skill-group {
+    background-color: var(--white);
+    color: var(--text-color);
+  }
+}
